@@ -1,5 +1,5 @@
 /**app.wxss**/
-.container {
+/* .container {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -7,4 +7,15 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
-} 
+}  */
+text {
+  font-size: 26rpx;
+}
+@font-face {
+  font-family: 'iconfont';  /* project id 993878 */
+  src: url('//at.alicdn.com/t/font_993878_ux94i0dx1br.eot');
+  src: url('//at.alicdn.com/t/font_993878_ux94i0dx1br.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_993878_ux94i0dx1br.woff') format('woff'),
+  url('//at.alicdn.com/t/font_993878_ux94i0dx1br.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_993878_ux94i0dx1br.svg#iconfont') format('svg');
+}

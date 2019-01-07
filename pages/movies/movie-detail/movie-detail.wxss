@@ -1,0 +1,97 @@
+/* 海报信息 */
+.detail-head{
+  position: relative;
+  width: 100%;
+  height: 360rpx;
+}
+.detail-head .inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.detail-head .bg-avatar{
+  position: absolute;
+  left: 0;
+  top: 0;
+  filter: blur(30rpx);
+  z-index: -1;
+}
+.detail-head .avatar{
+  position: absolute;
+  right: 40rpx;
+  bottom: -100rpx;
+  width: 260rpx;
+  height: 320rpx;
+  z-index: 999;
+  box-shadow: 0px 2px 2px #666;
+}
+.detail-head .inner{
+  padding-left: 40rpx;
+}
+.detail-head .inner text {
+  display: block;
+  text-shadow: 1px 0px 2px #999;
+}
+.detail-head .inner .title{
+  margin: 40rpx 0;
+  font-size: 44rpx;
+  font-weight: bold;
+  color: #fff;
+}
+.detail-head .inner .site{
+  font-size: 32rpx;
+  color: #fff;
+}
+.detail-head .inner .comment{
+  margin-top: 120rpx;
+  color: red;
+}
+/* 基本信息 */
+.detail-base{
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+  border-bottom: solid 1px #ddd;
+}
+.detail-base text{
+  line-height: 50rpx;
+}
+.detail-base .title{
+  margin-bottom: 30rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.detail-base .subtitle{
+  margin-right: 40rpx;
+}
+.detail-summary{
+  padding: 30rpx;
+  border-bottom: solid 1px #ddd;
+}
+.detail-summary .title{
+  display: block;
+  margin-bottom: 20rpx;
+  font-weight: bold;
+}
+/* 影人剧照 */
+.detail-castspic{
+  padding: 30rpx;
+  border-bottom: solid 1px #ddd;
+}
+.detail-castspic .title{
+  margin-bottom: 20rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.cast-item{
+  margin-top: 20rpx;
+  width: 100%;
+  white-space: nowrap;
+}
+.cast-item image{
+  display: inline-block;
+  width: 260rpx;
+  height: 300rpx;
+  margin-right: 20rpx;
+}

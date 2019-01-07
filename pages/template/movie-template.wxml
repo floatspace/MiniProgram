@@ -1,0 +1,7 @@
+<template name="movie-item">
+  <view class='movie-wrapper'>
+    <image class="movie-pic" src='{{avatars.small}}' data-id="{{id}}" data-type="{{type}}"></image>
+    <text class='movie-name'>{{title}}</text>
+    <text class='movie-rating'>评分:{{rating}}</text>
+  </view>
+</template>

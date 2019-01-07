@@ -1,0 +1,27 @@
+<import src="../template/movie-template" />
+<view class='movie-container'>
+  <view class='movie-list-content'>
+    <text class='movie-category'>正在热映</text>
+    <view class='movie-list' catchtap='showDetail'>
+      <template is="movie-item" data="{{...hot[0]}}"></template>
+      <template is="movie-item" data="{{...hot[1]}}"></template>
+      <template is="movie-item" data="{{...hot[2]}}"></template>
+    </view>
+  </view>
+  <view class='movie-list-content'>
+    <text class='movie-category'>即将上映</text>
+    <view class='movie-list' catchtap='showDetail'>
+      <template is="movie-item" data="{{...comingSoon[0]}}"></template>
+      <template is="movie-item" data="{{...comingSoon[1]}}"></template>
+      <template is="movie-item" data="{{...comingSoon[2]}}"></template>
+    </view>
+  </view>
+  <view class='movie-list-content'>
+    <text class='movie-category'>TOP250</text>
+    <view class='movie-list' catchtap='showDetail'>
+      <template is="movie-item" data="{{...top[0]}}"></template>
+      <template is="movie-item" data="{{...top[1]}}"></template>
+      <template is="movie-item" data="{{...top[2]}}"></template>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,2 @@
+// https://www.apiopen.top/journalismApi
+export const baseUrl = 'http://127.0.0.1:80/v2/'

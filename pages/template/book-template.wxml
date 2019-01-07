@@ -1,0 +1,16 @@
+<template name="bookItem">
+  <view class='book-container'>
+    <view class='book'>
+      <image class='book-left' src='{{pic}}'></image>
+      <view class='book-right'>
+        <text class="book-title">{{title}}</text>
+        <text>作者:{{author}}</text>
+        <text>出版社:{{pub}}</text>
+        <text>出版年:{{year}}</text>
+        <text>定价:{{price}}元</text>
+        <text>页数:{{pages}}</text>
+        <text>译者:{{translator}}</text>
+      </view>
+    </view>
+  </view>
+</template>

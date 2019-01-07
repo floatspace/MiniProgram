@@ -1,0 +1,18 @@
+<view class='container'>
+  <image src='{{bookInfo.pic}}' mode='aspectFill' class='head-image'></image>
+  <text class='title'>{{bookInfo.title}}</text>
+  <view class='author-date'>
+    <image src='https://img3.doubanio.com/view/photo/sqxs/public/p2533998206.webp' class='author-avatar'></image>
+    <text class='author-name'>{{bookInfo.author}}</text>
+    <text class='date'>{{bookInfo.date}}</text>
+  </view>
+  <view class='tools'>
+    <image id='like' src='{{like ? icons.like[1] : icons.like[0]}}' catchtap='toggleIcon'></image>
+    <image id='star' src='{{star ? icons.star[1] : icons.star[0]}}' catchtap='toggleIcon'></image>
+    <image id='share' src='{{share ? icons.share[1] : icons.share[0]}}' catchtap='toggleIcon'></image>
+    <text class='horizental'></text>
+  </view>
+  <view class='content'>
+    <text class='content-detail'>{{bookInfo.intro}}</text>
+  </view>
+</view>

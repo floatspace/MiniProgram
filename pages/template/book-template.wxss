@@ -1,0 +1,32 @@
+.book-container{
+  border-bottom: solid 2rpx #f6f6f6;
+  padding: 10rpx 0 20rpx;
+}
+/* 书籍信息 */
+.book {
+  display: inline-flex;
+  flex-direction: row;
+}
+/* 书籍图片 */
+.book-left{
+  width: 300rpx;
+  height: 380rpx;
+  margin: 20rpx;
+}
+.book-right{
+  flex: 1;
+  margin: 10rpx 20rpx;
+}
+.book-right text{
+  display: block;
+  line-height: 50rpx;
+}
+/* 书籍标题 */
+.book-title{
+  font-size: 32rpx;
+  font-weight: bold;
+}
+/* 书籍介绍 */
+.book-intro{
+  font-size: 30rpx;
+}

@@ -1,0 +1,21 @@
+<import src="../template/book-template.wxml" />
+<view>
+  <swiper
+    indicator-dots="{{swiperConfig.indicatorDots}}" 
+    indicator-color="{{swiperConfig.indicatorColor}}"
+    circular="{{swiperConfig.circular}}" 
+    autoplay="{{swiperConfig.autoplay}}"
+    interval="{{swiperConfig.interval}}"
+  >
+    <block wx:for="{{swiperList}}"  wx:key="i">
+      <swiper-item>
+        <image src='{{item}}' mode='top left' style='width: 100%;'></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <block wx:for="{{newsList}}" wx:key="i">
+    <view data-postid="{{item.bookid}}" catchtap="onDetaiTap">
+      <template is="bookItem" data="{{...item}}"/>
+    </view>
+  </block>
+</view> 

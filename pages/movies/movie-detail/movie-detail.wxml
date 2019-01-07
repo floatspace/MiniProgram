@@ -1,0 +1,30 @@
+<view>
+  <view class='detail-head'>
+    <view class='inner'>
+      <image class="bg-avatar" src='{{detailInfo.avatars.small}}' st></image>
+      <text class='title'>{{detailInfo.title}}</text>
+      <text class='site'>香港·1995</text>
+      <text class='comment'>{{detailInfo.comment}} - 评论</text>
+    </view>
+    <image class="avatar" src='{{detailInfo.avatars.small}}' catchtap='onPreviewImg'></image>
+  </view>
+  <view class='detail-base'>
+    <text class='title'>{{detailInfo.title}}</text>
+    <text><text class='subtitle'>评分</text>{{detailInfo.rating}}</text>
+    <text><text class='subtitle'>导演</text>{{detailInfo.directors}}</text>
+    <text><text class='subtitle'>影人</text>
+    <text wx:for="{{detailInfo.casts}}" wx:key="i"> {{item}}</text></text>
+    <text><text class='subtitle'>类型</text>
+    <text wx:for="{{detailInfo.genres}}" wx:key="i"> {{item}}</text></text>
+  </view>
+  <view class='detail-summary'>
+    <text class='title'>剧情简介</text>
+    <text>{{detailInfo.intro}}</text>
+  </view>
+  <view class='detail-castspic'>
+    <text class='title'>影人剧照</text>
+    <scroll-view class='cast-item' scroll-x="true">
+        <image wx:if="{{detailInfo.castsPic}}" wx:for="{{detailInfo.castsPic}}" wx:key="i" src='{{item}}' catchtap='onPreviewCasts'></image>
+    </scroll-view>
+  </view>
+</view>
